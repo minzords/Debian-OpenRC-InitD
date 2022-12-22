@@ -15,16 +15,16 @@ command_background=true
 
 start_pre() {
 	# Ensure that our dirs are correct
-	checkpath --directory --owner jellyfin:jellyfin --mode 0775 \
+	checkpath --directory --owner jellyfin:jellyfin --mode 0774 \
 		${JELLYFIN_LOG_DIR}
-	checkpath --directory --owner jellyfin:jellyfin --mode 0775 \
+	checkpath --directory --owner jellyfin:jellyfin --mode 0774 \
 		${JELLYFIN_CACHE_DIR}
-	checkpath --directory --owner jellyfin:jellyfin --mode 0775 \
+	checkpath --directory --owner jellyfin:jellyfin --mode 0774 \
 		${JELLYFIN_CONFIG_DIR}
-	checkpath --directory --owner jellyfin:jellyfin --mode 0775 \
+	checkpath --directory --owner jellyfin:jellyfin --mode 0774 \
 		${JELLYFIN_DATA_DIR}
 	checkpath --directory --owner jellyfin:jellyfin --mode 0774 \
                 ${JELLYFIN_WEB_DIR}
-	checkpath --directory --owner jellyfin:jellyfin --mode 0775 \
+	checkpath --directory --owner jellyfin:jellyfin --mode 0774 \
                 ${JELLYFIN_FFMPEG_DIR}
 }
